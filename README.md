@@ -19,3 +19,8 @@ in Numpy, for the sake of saving the computation power, I have swapped np.dot(W.
 This class forms the hidden layer inside the neural network, 
 The class is initialized with outputs from the previous layers as input (X), randomly initialized weights (W) and zero-initialized biases (B)
 the class has a forward pass method which performs the <b>W<sup>-1</sup>.X + b</b> for the current layer 
+
+
+## Activation Class
+
+This class accepts Z (<b>W<sup>-1</sup>.X + b</b>) as argument contains three commonly used non-linear activation functions -> ReLU, Sigmoid, and Tanh 
