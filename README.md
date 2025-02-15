@@ -1,6 +1,6 @@
 # nueral-network-from-sratch
 
-### test neuron class 
+## test neuron class 
 
 This class isolates a tensor / layer and tests for different inputs and weights. 
 There are 3 tests currently ,
@@ -14,7 +14,7 @@ this mimics the y = <b>W<sup>-1</sup>.X + b </b>
 in Numpy, for the sake of saving the computation power, I have swapped np.dot(W.T, X) to np.dot(X,W)
 
 
-### Layer Class 
+## Layer Class 
 
 This class forms the hidden layer inside the neural network, 
 The class is initialized with outputs from the previous layers as input (X), randomly initialized weights (W) and zero-initialized biases (B)
