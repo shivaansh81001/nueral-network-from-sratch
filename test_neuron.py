@@ -11,4 +11,15 @@ class test_neuron:
         Y = np.dot(self.X,self.W) + self.b
         return Y
     
-    
+
+def test():
+    inputs = [1.2, 1.1, 2.4]
+    weights = [0.3, 2.4, 3.1]
+    bias = 1.6
+
+    neuron = test_neuron(inputs, weights, bias)
+    print(neuron.output())
+
+
+if __name__ == '__main__':
+    test()
