@@ -1,6 +1,6 @@
 # nueral-network-from-sratch
 
-## test neuron class 
+## Test neuron class 
 
 This class isolates a tensor / layer and tests for different inputs and weights. 
 There are 3 tests currently ,
