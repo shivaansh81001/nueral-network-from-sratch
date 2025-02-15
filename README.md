@@ -9,7 +9,7 @@ There are 3 tests currently ,
 3. output from 4 inputs -> input to 3 neurons
 
 The output is calaculated by multiplying the inputs (which is the output from previous tensor/layer) and the weights associated with the connected neurons and adds bias.
-this mimics the y = W ${-1}$ * X +b 
+this mimics the y = W^(-1) * X +b 
 
 in Numpy, for the sake of saving the computation power, I have swapped np.dot(W.T, X) to np.dot(X,W)
 
