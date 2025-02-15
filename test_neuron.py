@@ -13,9 +13,9 @@ class test_neuron:
     
 
 def test():
-    inputs = [1.2, 1.1, 2.4]
-    weights = [0.3, 2.4, 3.1]
-    bias = 1.6
+    inputs = [1.2, 1.1, 2.4, 3.4]
+    weights = [[0.3, 2.4, 3.1],[0.3, 2.4, 0.5],[0.3, 2.4, 3.1],[0.3, 2.4, 2.6]]
+    bias = [1.6, 2.4,0.5]
 
     neuron = test_neuron(inputs, weights, bias)
     print(neuron.output())
