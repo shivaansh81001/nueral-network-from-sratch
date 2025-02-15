@@ -9,7 +9,7 @@ There are 3 tests currently ,
 3. output from 4 inputs -> input to 3 neurons
 
 The output is calaculated by multiplying the inputs (which is the output from previous tensor/layer) and the weights associated with the connected neurons and adds bias.
-this mimics the y = W<sup>-1</sup> * X +b 
+this mimics the y = <b>W<sup>-1</sup>.X + b </b>
 
 in Numpy, for the sake of saving the computation power, I have swapped np.dot(W.T, X) to np.dot(X,W)
 
@@ -18,4 +18,4 @@ in Numpy, for the sake of saving the computation power, I have swapped np.dot(W.
 
 This class forms the hidden layer inside the neural network, 
 The class is initialized with outputs from the previous layers as input (X), randomly initialized weights (W) and zero-initialized biases (B)
-the class has a forward pass method which performs the W<sup>-1</sup>* X +b for the current layer 
+the class has a forward pass method which performs the <b>W<sup>-1</sup>.X + b</b> for the current layer 
