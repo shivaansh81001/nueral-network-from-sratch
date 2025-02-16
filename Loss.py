@@ -22,7 +22,10 @@ class Loss:
         return L
     
     def binary_cross_entropy_loss(self):
-        pass
+        num = (-1/len(self.y_hat))
+        loss = np.sum(self.y_target * np.log(self.y_hat + self.e))
+        L = num*loss
+        return L
 
     
 def test():
@@ -37,6 +40,13 @@ def test():
     observed_mse = np.array([2.1,0.1,2.5])
     loss= Loss(predicted_mse,observed_mse)
     print('MSE= ',loss.MSE())
+
+    predicted_bce = np.array([[0.0,1.0],
+                             [0.99,0.01]])
+    observed_bce = np.array([[0,1],
+                            [1,0]])
+    loss= Loss(predicted_bce,observed_bce)
+    print('Binary cross entropy= ',loss.binary_cross_entropy_loss())
 
 if __name__ == '__main__':
     test()
