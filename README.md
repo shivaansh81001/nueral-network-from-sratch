@@ -25,4 +25,4 @@ the class has a forward pass method which performs the <b>W<sup>-1</sup>.X + b</
 
 ## Activation Class
 
-This class accepts Z (<b>W<sup>-1</sup>.X + b</b>) as argument contains three commonly used non-linear activation functions -> ReLU, Sigmoid, Tanh and Softmax 
+This class accepts Z (<b>W<sup>-1</sup>.X + b</b>) as argument contains four commonly used non-linear activation functions -> ReLU, Sigmoid, Tanh and Softmax 
