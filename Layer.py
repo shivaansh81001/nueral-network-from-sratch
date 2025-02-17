@@ -2,7 +2,7 @@ import numpy as np
 
 np.random.seed(0)
 
-class Layer():
+class Dense():
     def __init__(self, inputs, n_neurons):
         '''class accepts inputs (outputs from the previous layers) and the number of required neurons in the current layer'''
         self.X = inputs
@@ -18,7 +18,7 @@ class Layer():
 def test_forward():
     #testing method for forward pass 
     inputs = [1.2, 1.1, 2.4, 3.4]
-    tensor = Layer(inputs, 4)
+    tensor = Dense(inputs, 4)
     print(tensor.forward_pass())
     
 
