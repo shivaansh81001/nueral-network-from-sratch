@@ -1,5 +1,5 @@
 import numpy as np 
-
+#test comment
 class test_neuron:
     def __init__(self,inputs,weights, bias):
         self.X = np.array(inputs)
